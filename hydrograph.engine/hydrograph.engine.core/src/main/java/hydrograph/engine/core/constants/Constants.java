@@ -44,6 +44,11 @@ public class Constants {
      * The default Teradata port
      */
     public static final int DEFAULT_TERADATA_PORT = 1025;
+
+    /**
+     * The default PostgreSQL port
+     */
+    public static final int DEFAULT_POSTGRES_PORT = 5432;
     /**
      * The default chunk size
      */
