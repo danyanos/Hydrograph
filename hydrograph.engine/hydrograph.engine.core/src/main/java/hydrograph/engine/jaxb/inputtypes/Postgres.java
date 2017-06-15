@@ -50,7 +50,7 @@ import hydrograph.engine.jaxb.ipostgres.TypeInputPostgresBase;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "postgres", propOrder = {
+@XmlType(name = "postgres", namespace = "hydrograph/engine/jaxb/inputtypes", propOrder = {
     "databaseName",
     "schemaName",
     "hostName",

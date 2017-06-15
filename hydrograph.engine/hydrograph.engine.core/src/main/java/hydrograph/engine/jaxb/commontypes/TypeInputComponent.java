@@ -22,6 +22,7 @@ import hydrograph.engine.jaxb.igr.TypeGenerateRecordBase;
 import hydrograph.engine.jaxb.ihivetextfile.TypeInputHiveTextFileDelimitedBase;
 import hydrograph.engine.jaxb.imysql.TypeInputMysqlBase;
 import hydrograph.engine.jaxb.ioracle.TypeInputOracleBase;
+import hydrograph.engine.jaxb.ipostgres.TypeInputPostgresBase;
 import hydrograph.engine.jaxb.iredshift.TypeInputRedshiftBase;
 import hydrograph.engine.jaxb.isparkredshift.TypeInputSparkredshiftBase;
 import hydrograph.engine.jaxb.iteradata.TypeInputTeradataBase;
@@ -75,7 +76,8 @@ import java.util.List;
     TypeInputOracleBase.class,
     TypeInputTeradataBase.class,
     TypeInputFileXmlBase.class,
-    TypeFileExcelBase.class
+    TypeFileExcelBase.class,
+    TypeInputPostgresBase.class
 })
 public abstract class TypeInputComponent
     extends TypeBaseComponent

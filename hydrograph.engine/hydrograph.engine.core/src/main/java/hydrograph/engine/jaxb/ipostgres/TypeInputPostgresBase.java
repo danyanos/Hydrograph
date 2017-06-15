@@ -37,7 +37,7 @@ import hydrograph.engine.jaxb.inputtypes.Postgres;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "type-input-postgres-base")
+@XmlType(name = "type-input-postgres-base", namespace="hydrograph/engine/jaxb/ipostgres")
 @XmlSeeAlso({
     Postgres.class
 })
