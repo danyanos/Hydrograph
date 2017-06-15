@@ -21,6 +21,7 @@ import hydrograph.engine.jaxb.igr.TypeGenerateRecordOutSocket;
 import hydrograph.engine.jaxb.ihivetextfile.TypeInputHiveTextDelimitedOutSocket;
 import hydrograph.engine.jaxb.imysql.TypeInputMysqlOutSocket;
 import hydrograph.engine.jaxb.ioracle.TypeInputOracleOutSocket;
+import hydrograph.engine.jaxb.ipostgres.TypeInputPostgresOutSocket;
 import hydrograph.engine.jaxb.iteradata.TypeInputTeradataOutSocket;
 import hydrograph.engine.jaxb.itffw.TypeInputFixedwidthOutSocket;
 import hydrograph.engine.jaxb.itfs.TypeInputSequenceOutSocket;
@@ -68,7 +69,8 @@ import javax.xml.bind.annotation.*;
     TypeInputOracleOutSocket.class,
     TypeInputTeradataOutSocket.class,
     TypeInputXmlOutSocket.class,
-    TypeExcelOutSocket.class
+    TypeExcelOutSocket.class,
+    TypeInputPostgresOutSocket.class
 })
 public class TypeInputOutSocket
     extends TypeBaseOutSocket

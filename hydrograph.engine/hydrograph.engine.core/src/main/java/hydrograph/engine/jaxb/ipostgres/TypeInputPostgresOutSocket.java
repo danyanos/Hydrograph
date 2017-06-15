@@ -36,7 +36,7 @@ import hydrograph.engine.jaxb.commontypes.TypeInputOutSocket;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "type-input-postgres-out-socket")
+@XmlType(name = "type-input-postgres-out-socket", namespace="hydrograph/engine/jaxb/ipostgres")
 public class TypeInputPostgresOutSocket
     extends TypeInputOutSocket
 {
