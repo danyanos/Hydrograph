@@ -109,7 +109,7 @@ public class InputPostgresEntityGenerator extends InputComponentGeneratorBase {
 		List<TypeInputOutSocket> inputOutSocketList = inputPostgresJaxb.getOutSocket();
 
 		//Input components by definition have only one outsocket
-		TypeInputOutSocket inputOutSocket = inputOutSocketList.get(0); 
+		TypeInputOutSocket inputOutSocket = inputOutSocketList.get(0);
 		TypeBaseRecord schema = inputOutSocket.getSchema();
 
 		/*	'objectSchema' contains 3 different types of objects
