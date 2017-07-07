@@ -84,6 +84,7 @@ public class InputPostgresEntityGenerator extends InputComponentGeneratorBase {
 		inputRDBMSEntity.setPort(this.getPortNumber());
         inputRDBMSEntity.setUsername(inputPostgresJaxb.getUsername().getValue());
         inputRDBMSEntity.setPassword(inputPostgresJaxb.getPassword().getValue());
+		inputRDBMSEntity.setSchemaName(inputPostgresJaxb.getSchemaName().getValue());
 		//NOTE: only one of 'tableName' or 'selectQuery' will be used. 
         inputRDBMSEntity.setTableName(this.getTableNameString());
         inputRDBMSEntity.setSelectQuery(this.getSelectQueryString());
@@ -108,7 +109,7 @@ public class InputPostgresEntityGenerator extends InputComponentGeneratorBase {
 		List<TypeInputOutSocket> inputOutSocketList = inputPostgresJaxb.getOutSocket();
 
 		//Input components by definition have only one outsocket
-		TypeInputOutSocket inputOutSocket = inputOutSocketList.get(0);
+		TypeInputOutSocket inputOutSocket = inputOutSocketList.get(0); 
 		TypeBaseRecord schema = inputOutSocket.getSchema();
 
 		/*	'objectSchema' contains 3 different types of objects
@@ -147,6 +148,7 @@ public class InputPostgresEntityGenerator extends InputComponentGeneratorBase {
 
 	private String getTableNameString() {
 		if(inputPostgresJaxb.getTableName() == null) {
+			LOG.error("TABLE NAME IS NULL");
 			return null;
 		}
 
@@ -169,5 +171,4 @@ public class InputPostgresEntityGenerator extends InputComponentGeneratorBase {
     public InputRDBMSEntity getEntity() {
         return this.inputRDBMSEntity;
     }
-
 }
